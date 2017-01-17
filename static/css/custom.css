@@ -1,0 +1,7 @@
+ p .category{
+    display: inline-block;
+    margin-right: 0.6em;
+    text-align: right;
+    width: 4.2em;
+    vertical-align: middle;
+}

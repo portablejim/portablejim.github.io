@@ -1,0 +1,29 @@
+---
+title: Sermon Encoder - Programs
+---
+<h1><span>Sermons Encoder</span></h1>
+<p>This program converts lossless audio files into a set of smaller audio files with certain presets, including ID3 tags. This is used to encode church sermons from the original recording into MP3 and Opus files in order to be put onto the church website.</p>
+<p>The motivation for the program was personal, as I wanted a system that worked better than the system that I was currently using by combining several steps into one step (resulting in a quicker process that is easier for others to follow) and having a solution that would work on both Linux and Mac (the process was using iTunes for lots of the steps.)</p>
+<p>The program has several features:</p>
+<ul class="link-list" style="display: inline-block">
+    <li><span style="line-height: 18px;">Encoding a file into two qualities of MP3, suitable for high and low quality files</span></li>
+    <li><span style="line-height: 18px;">Ability to input in several different formats</span></li>
+    <li><span style="line-height: 18px;">Search feature for finding the latest sermon series starting with the search string.</span></li>
+    <li><span style="line-height: 18px;">Ability to choose the folder that the MP3 files are put in.</span></li>
+    <li><span style="line-height: 18px;">Ability to include a suffix to the MP3 files.</span></li>
+</ul>
+<p>This program has two major versions. The initial version was written is PHP and the latest version is written in Python</p>
+<h2><span>PHP</span></h2>
+<figure><img title="The main screen" alt="The main screen of the sermons encoder" src="/static/images/programs/sermon-encoder-php1.png" /></figure>
+<p>The version is created in PHP, HTML, Javascript (AJAX) using a small MYSQL table to store the latest sermon series and the date that they were used. A bash script is created by PHP and run in order to convert the files.</p>
+<p>Since developing the program, a few issues developed that hindered the use of the program.</p>
+<ul>
+    <li>Additional filetypes were wanted as output</li>
+    <li>It was hard to install to install to other systems in a non-invasive manner.</li>
+</ul>
+<p>The installation difficulty arise due to incompatibilities that come as a result of the target platform being a PPC based OS X machine.</p>
+<p>The program is not ready for release due to the user's input bot being validated due to the need being absent, and the difficulty to setup the system to work correctly. The people that use the program are trusted, and the program can only be access locally on the computer.</p>
+<h2><span>Python</span></h2>
+<figure><img title="The main screen" alt="The main screen of the sermons encoder" src="/static/images/programs/sermon-encoder-python1.png" /></figure>
+<p>This version was written using Python 3 and tkinter. The encoding is done by calling ffmpeg, lame and oggenc at the appropriate times. As long as the listed programs are installed, it is able to be run directly from where it is. I have also created a Mac Application in order to improve the user experience on OS X.</p>
+<p>Downloads can be gotten from the <a href="https://github.com/portablejim/sermons-encoder/releases">github release page</a></p>

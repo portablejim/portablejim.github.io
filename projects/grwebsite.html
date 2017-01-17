@@ -1,0 +1,70 @@
+---
+title: Global Recordings Website
+---
+<h1>Global Recordings Website</h1>
+<figure><img title="The main screen" alt="Global Recordings Network website" src="/static/images/programs/grn-website-full2.jpeg" /></figure>
+<p>As part of a team, I updated the website of <a href="http://globalrecordings.net">http://globalrecordings.net</a> to use
+    a new responsive design, including developing a custom forms library and customising a javascript HTML5 player
+    to suit the requirements of the organisation. </p>
+
+<h2>Forms Library</h2>
+<figure><img title="The main screen" alt="Global Recordings Network website" src="/static/images/programs/grn-form-demo.png" /></figure>
+<p>I developed a library that would generate forms from a text config. For example, the above form was generated from the following code. The code included internationalisation keys.</p>
+    <pre>
+<code>[form]
+ type = email
+ titleId = stay_informed
+ descriptionId = receive_inspiring_stories
+ toAddress = @globalrecordings.net
+ toPrefix = select_a_country
+ fromField = your_email_address
+ buttonStringId = sign_up_for_updates
+ successId = formdata_success_message
+ errorId = errorId
+ restrictField = select_a_country
+
+ [fields]
+ your_first_name.name = "your_first_name"
+ your_first_name.type = "text"
+ your_first_name.width = 1
+ your_first_name.promptId = "your_first_name"
+ your_first_name.required = true
+ your_first_name.errorId = "error_field_is_blank"
+
+ your_last_name.name = "your_last_name"
+ your_last_name.type = "text"
+ your_last_name.width = 1
+ your_last_name.promptId = "your_last_name"
+ your_last_name.required = true
+ your_last_name.errorId = "error_field_is_blank"
+
+ your_email_address.name = "your_email_address"
+ your_email_address.type = "email"
+ your_email_address.width = 1
+ your_email_address.promptId = "your_email_address"
+ your_email_address.required = true
+ your_email_address.errorId = "error_email_is_blank_or_invalid"
+
+ select_a_country.name = "select_a_country"
+ select_a_country.type = "dropdown"
+ select_a_country.width = 1
+ select_a_country.promptId = "select_a_country"
+ select_a_country.required = true
+ select_a_country.errorId = "error_field_is_blank"
+ select_a_country.options["au"] = "location_35"
+ select_a_country.options["mailca"] = "location_61"
+ select_a_country.options["ph"] = "location_221"
+ select_a_country.options["ch"] = "location_245"
+ select_a_country.options["thai"] = "location_248"
+ select_a_country.options["uk"] = "location_263"
+ select_a_country.options["us"] = "location_265"
+</code>
+</pre>
+<p>The code for the library is <a href="https://github.com/portablejim/FormGenerator">available here</a>.</p>
+
+<h2 id="jsplayer">Javascript player</h2>
+
+<p>The existing flash-based player was not adequate for the organisation's needs to play content on many devices, and there was not a library that was able to meet those needs. I updated a plugin for <a href="http://mediaelementjs.com/">Mediaelement.js</a> called "Mediaelement playlist plugin" that was abandoned. I fixed the bugs present in it and improved on the plugin to include the features that the organisation required.</p>
+<p>The plugin allows an audio playlist to be played, whilst showing an appropriate image for the track.</p>
+<p><a href="http://portablejim.github.io/mediaelement-playlist-plugin/index.html">Documentation and code for the plugin</a>.</p>
+<p><a href="http://test.globalrecordings.net/en/program/C23050">Here</a> is a link to a page on the live website using the plugin.</p>

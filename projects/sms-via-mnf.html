@@ -1,0 +1,25 @@
+---
+title: SMS via MyNetFone - Programs
+---
+<h1><span>SMS via MyNetFone</span></h1>
+<p>I was looking for an easy way for mobile phones to send SMS through <a href="https://www.mynetfone.com.au/"> MyNetFone</a>, an Australian Voip service Provider. Because there was no program that I could find suitable, I created a program on the android platform (while learning the language) and called it "SMS via MNF.</p>
+<h2><span>About</span></h2>
+<p>SMS can be sent normally through MyNetfone by logging onto the portal at <a href="https://www.mynetfone.com.au/">https://www.mynetfone.com.au/</a> and going to "MyText SMS". However, logging into this via a mobile phone is not only hard (because of the small screen size, it uses precious kilobytes of data transfer.</p>
+<p>Thankfully MyNetFone has made available their <a href="https://www.mynetfone.com.au/Residential/Home-Phone/MyNetFone-VoIP/features/MyText-SMS/API">MyText SMS API</a> which allows you to send an SMS using you MyNetFone account be requesting a URL. This allowed me to create a simple HTML form to send SMS (which can be used by non-smart-phones) through MyNetFone. Because of the nature of a HTML form, data could not be saved and so it defeated the purpose, as you could not login to the portal without having to carry the login details round with you (plus, secure passwords are annoying to enter over and over again for the same site).</p>
+<p>I therefore endeavoured to learn the Android programming language (which is based on Java) and at the same time create a simple SMS sender.</p>
+<div class="legend">
+    <h2 class="legend-title"><span>Decription of "SMS via MNF"</span></h2>
+    <p>SMS via MNF is a simple SMS sender that allows you to send SMS through your MyNetFone account. It stores your account settings so you do not have to remember them. It provides feedback as to whether the SMS was sucessfully sent or not.</p>
+</div>
+<p>Some screenshots of SMS via MNF</p>
+<figure><img src="/static/images/programs/sms-via-mnf_main1.png" /> <img src="/static/images/programs/sms-via-mnf_settings2.png" /></figure>
+<p>The code for SMS via MNF is licenced under the GPL 3 and is available <a href="http://code.google.com/p/sms-via-mnf/source">here</a></p>
+<h2><span>Installation</span></h2>
+<p>The application is <a href="https://play.google.com/store/apps/details?id=au.id.jamesmckay.smsviamnf">in the Play Store</a>.</p>
+<h2><span>Quick start</span></h2>
+<ol class="link-list" style="display: inline-block">
+    <li>Install SMS via MNF and run it.<br /></li>
+    <li>Press menu and go to "Settings"</li>
+    <li>Input your username and password (the ones you use to login to the MyNetFone Portal)</li>
+    <li>Input your SMS subscription ID (When you login to the MyNetFone portal</li>
+</ol>

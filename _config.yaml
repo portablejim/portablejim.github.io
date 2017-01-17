@@ -1,0 +1,10 @@
+timezone: Australia/NSW
+encoding: utf-8
+source: .
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "basic"

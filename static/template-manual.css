@@ -1,0 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-outer {
+    background-color: #110a0d;
+    color: #eef5f2;
+    overflow: auto;
+}
+
+header {
+    font-family: 'Playfair Display', serif;
+}
