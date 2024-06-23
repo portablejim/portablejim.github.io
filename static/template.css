@@ -256,7 +256,7 @@ main {
             padding-left: 0.5em;
             vertical-align: middle; }
       .resume main > section > section > section h3, .resume main .dated-list .date, .resume main .category-list .category {
-        width: 7.6em;
+        width: 4.0em;
         display: table-cell;
         padding: 0.1em 0.5em 0.1em 0;
         border-right: 0.2em solid #fecb50;
