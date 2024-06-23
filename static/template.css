@@ -347,11 +347,4 @@ div.dated-list, ul.dated-list, div.category-list, ul.category-list {
 .no-svg .resume main .resume-address a:before, .no-svg .resume main .resume-phone a:before, .no-svg .resume main .resume-email a:before, .no-svg .resume main .resume-website a:before {
   background-image: url("icons-grid.png"); }
 
-@page {
-	margin-top: 5cm;
-	margin-bottom: 5cm;
-	margin-left: 3cm;
-	margin-right: 3cm;
-}
-
 /*# sourceMappingURL=template.css.map */
