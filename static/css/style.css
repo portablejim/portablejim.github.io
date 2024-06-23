@@ -165,10 +165,3 @@
 		background-image: linear-gradient(top, #1b9fbe, #118eb1);
 		box-shadow: inset 0px 0px 0px 1px #3ecceb;
 	}
-
-	@page {
-		margin-top: 5cm;
-		margin-bottom: 5cm;
-		margin-left: 3cm;
-		margin-right: 3cm;
-	 }
