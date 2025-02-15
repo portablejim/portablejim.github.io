@@ -198,6 +198,10 @@ main {
   .header-outer {
     display: none; }
 
+  .no-print {
+    display: none;
+  }
+
   .resume .referees .referee-list {
     padding-left: 7.6em; }
 
