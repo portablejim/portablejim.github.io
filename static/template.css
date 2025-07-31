@@ -159,6 +159,10 @@ main {
 .no-svg main .image-list li a .icons, .no-svg main .image-list li > div .icons {
   background-image: url("icons-grid.png"); }
 
+.print-only-inline {
+  display: none;
+}
+
 @page {
   margin: 2.2cm 2.0cm 2.0cm;
   padding: 0;
@@ -200,6 +204,15 @@ main {
 
   .no-print {
     display: none;
+  }
+
+  .print-only-inline {
+    display: inline;
+  }
+
+  .resume .certificates {
+    padding: 0.5em 1em;
+    margin: 0;
   }
 
   .resume .referees .referee-list {
